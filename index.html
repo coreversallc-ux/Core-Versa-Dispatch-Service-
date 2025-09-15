@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Core Versa LLC — Dispatching & Driver Onboarding</title>
+  <meta name="description" content="Core Versa LLC dispatches nationwide expedited freight with Amazon-approved loads. Onboard under our authority, choose your membership, and start running with 24/7 dispatcher support." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Core Versa LLC — Dispatching & Driver Onboarding">
+  <meta property="og:description" content="Onboard under our authority. 24/7 dispatcher support, Amazon-approved freight, and lifetime or 6‑month membership options.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549921296-3cca3d9442c2?q=80&w=1600&auto=format&fit=crop">
+
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root{
+      --brand:#C62828; --brand-2:#FF6B6B; --ink:#141414; --muted:#6b7280;
+      --bg:#0b0b0f; --panel:#101318; --card:#0e1218; --max:1200px;
+      --radius:16px; --shadow:0 20px 40px rgba(0,0,0,.35);
+      --grad: radial-gradient(1200px 700px at 10% -10%, #2a3cff1f, transparent 70%), radial-gradient(1000px 600px at 110% 10%, #ff2a2a14, transparent 60%);
+    }
+    *{box-sizing:border-box}
+    html:focus-within{scroll-behavior:smooth}
+    body{margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:#e6e8ea; background:var(--bg); background-image:var(--grad)}
+    a{color:#fff; text-decoration:none}
+    img{max-width:100%; height:auto; display:block}
+    .wrap{max-width:var(--max); margin:auto; padding:0 22px}
+    .pill{display:inline-flex; align-items:center; gap:10px; padding:10px 14px; background:#ffffff10; border:1px solid #ffffff20; border-radius:999px; font-weight:700}
+    .btn{display:inline-flex; justify-content:center; align-items:center; gap:10px; padding:14px 18px; border-radius:12px; background:linear-gradient(180deg,var(--brand),#a11212); color:#fff; font-weight:800; border:0; box-shadow:0 8px 18px rgba(198,40,40,.35); cursor:pointer}
+    .btn.alt{background:#1f2937; box-shadow:none; border:1px solid #334155}
+    .btn:hover{transform:translateY(-1px)}
+    .section{padding:64px 0}
+    header.site{position:sticky; top:0; z-index:40; backdrop-filter:saturate(140%) blur(8px); background:linear-gradient(0deg,rgba(11,11,15,.2),rgba(11,11,15,.6)); border-bottom:1px solid #ffffff1a}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 0}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:900; letter-spacing:.3px}
+    .badge{width:34px; height:34px; border-radius:10px; background:linear-gradient(135deg,var(--brand),var(--brand-2)); box-shadow:0 6px 16px rgba(255,107,107,.35)}
+    .brand h1{font-size:18px; margin:0}
+    .nav a{opacity:.92}
+    .hero{padding:46px 0 30px}
+    .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:36px}
+    @media (max-width:980px){ .hero-grid{grid-template-columns:1fr} }
+    .hero h2{font-size:clamp(28px,4.6vw,52px); line-height:1.06; margin:8px 0 12px}
+    .sub{color:#c0c5cc; margin:0 0 16px}
+    .kpis{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 22px}
+    .kpi{background:#0f172a; border:1px solid #1f2a44; color:#fff; padding:9px 12px; border-radius:999px; font-weight:700; font-size:14px}
+    .panel{background:linear-gradient(180deg,#0f131a,#0a0d12); border:1px solid #1f2937; border-radius:var(--radius); box-shadow:var(--shadow); padding:22px}
+    .panel h3{margin:0 0 6px; font-size:20px; color:#fff}
+    .panel .lead{color:#f87171; font-weight:700; margin:0 0 12px}
+    label{display:block; font-size:13px; font-weight:800; color:#f87171; margin:12px 0 6px}
+    input, textarea{width:100%; background:#0b0f15; border:1px solid #2b3445; color:#e5e7eb; border-radius:12px; padding:12px 12px; outline:none}
+    input::placeholder, textarea::placeholder{color:#94a3b8}
+    textarea{min-height:120px}
+    .trust{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px}
+    @media (max-width:900px){ .trust{grid-template-columns:1fr} }
+    .trust .card{background:#0d1117; border:1px solid #1f2937; border-radius:14px; padding:18px}
+    .trust h4{margin:0 0 6px}
+    .grid{display:grid; gap:18px}
+    .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:980px){ .cols-2,.cols-3{grid-template-columns:1fr} }
+    .card{background:#0d1117; border:1px solid #1f2937; border-radius:16px; padding:20px}
+    .card h3{margin-top:0}
+    .list{list-style:none; padding:0; margin:0}
+    .list li{display:flex; gap:10px; align-items:flex-start; margin:10px 0; color:#cbd5e1}
+    .list li::before{content:""; width:10px; height:10px; border-radius:50%; background:var(--brand); margin-top:6px; box-shadow:0 0 0 6px rgba(198,40,40,.18)}
+    .mini{font-size:12px; color:#94a3b8}
+    .faq details{background:#0d1117; border:1px solid #1f2937; border-radius:16px; padding:0; overflow:hidden}
+    .faq summary{list-style:none; padding:14px 16px; cursor:pointer; font-weight:800}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq details div{padding:0 16px 16px; color:#cbd5e1}
+    .footer{border-top:1px solid #ffffff14; padding:30px 0; color:#cbd5e1; font-size:14px}
+    .ghost{opacity:.86}
+    .heroart{border-radius:18px; overflow:hidden; border:1px solid #1f2937}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site">
+    <div class="wrap nav">
+      <div class="brand">
+        <span class="badge" aria-hidden="true"></span>
+        <h1>Core Versa LLC — Dispatch</h1>
+      </div>
+      <nav>
+        <a class="pill" href="#options">Memberships</a>
+        <a class="pill" href="#steps">Onboarding</a>
+        <a class="pill" href="tel:+14122655719">📞 (412) 265-5719</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill ghost">Operate under our authority</span>
+        <h2>High‑Velocity Dispatching for Expedited & Amazon‑Approved Freight</h2>
+        <p class="sub">Onboard in minutes, choose the membership that fits, and get matched to loads with <strong>24/7 dispatcher support</strong>.</p>
+        <div class="kpis">
+          <span class="kpi">24/7 Dispatcher Support</span>
+          <span class="kpi">Amazon‑Approved Freight</span>
+          <span class="kpi">Run Under Our Authority</span>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:6px">
+          <a href="#options" class="btn">View Memberships</a>
+          <a href="#apply" class="btn alt">Start Onboarding</a>
+        </div>
+      </div>
+      <aside class="panel" id="apply" aria-label="Apply / Get Onboarded">
+        <h3>Apply / Get Onboarded</h3>
+        <div class="lead">Fast, simple, step‑by‑step.</div>
+        <form action="https://formsubmit.co/coreversallc@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://coreversallc-ux.github.io/Core-Versa/thank-you.html">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" placeholder="Your full name" required>
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" name="phone" placeholder="(###) ###‑####" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="your@email.com" required>
+          <label for="equipment">Equipment</label>
+          <input id="equipment" name="equipment" placeholder="26' Box (liftgate), Sprinter, Semi">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Location, availability, goals"></textarea>
+          <button class="btn" type="submit" style="width:100%; margin-top:10px">Start Onboarding</button>
+        </form>
+      </aside>
+    </div>
+    <div class="wrap" style="margin-top:22px">
+      <div class="heroart">
+        <img src="https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?q=80&w=1600&auto=format&fit=crop" alt="Modern tractor-trailer at a distribution center">
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / HIGHLIGHTS -->
+  <section class="section">
+    <div class="wrap trust">
+      <div class="card">
+        <h4>Authority Access</h4>
+        <p class="mini">Operate under Core Versa LLC with MC & DOT number access once approved.</p>
+      </div>
+      <div class="card">
+        <h4>Insurance Included (Premium)</h4>
+        <p class="mini">$1,000,000 Liability • $1,000,000 Cargo • $100,000 General.</p>
+      </div>
+      <div class="card">
+        <h4>Amazon & Top Brokers</h4>
+        <p class="mini">Priority access to premium expedited freight nationwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIPS -->
+  <section class="section" id="options">
+    <div class="wrap">
+      <h3 style="margin:0 0 16px; font-size:26px">💳 Membership Options</h3>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>🔹 $50 Load Board Membership (Basic – 6 Months)</h3>
+          <ul class="list">
+            <li>6 months of access to the Core Versa LLC Load Board</li>
+            <li>Dispatcher support included during the membership period</li>
+            <li>For drivers or companies who already carry their own insurance</li>
+            <li>Must be renewed every 6 months to remain active</li>
+          </ul>
+          <div style="display:flex; gap:10px; margin-top:8px; flex-wrap:wrap">
+            <a class="btn" href="https://connect.intuit.com/t/scs-v1-f79ed5961e8d4d3db6ed43d4754feceb612a3a3bc3ea45d0890b2400636b4990c035ba9abbfb45268e21eb08486c4156?locale=EN_US" target="_blank" rel="noopener">Pay $50 Basic</a>
+            <a class="btn alt" href="#apply">Apply Now</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>🔹 $99.99 Load Board Membership (Premium Lifetime)</h3>
+          <ul class="list">
+            <li>Lifetime access with a one-time payment</li>
+            <li>24/7 personal dispatcher support</li>
+            <li>Progressive insurance coverage included:</li>
+            <li>$1,000,000 Liability • $1,000,000 Cargo • $100,000 General</li>
+            <li>Includes MC Number & DOT Number access; operate under our authority</li>
+            <li>Ideal for drivers without their own insurance or authority</li>
+            <li>Transferable membership — may be reassigned to other drivers</li>
+            <li>Priority access to premium expedited loads from top brokers and Amazon</li>
+          </ul>
+          <div style="display:flex; gap:10px; margin-top:8px; flex-wrap:wrap">
+            <a class="btn" href="https://connect.intuit.com/t/scs-v1-bfc32b21c2544f8b9c88b24f9409628a66cb3b974fdb4993a221da11c1ffb15b8a3ec768000d41a3a5c670203277bf8b?locale=EN_US" target="_blank" rel="noopener">Pay $99.99 Premium</a>
+            <a class="btn alt" href="#apply">Apply Now</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section" id="steps">
+    <div class="wrap">
+      <h3 style="margin:0 0 16px; font-size:26px">🪜 Simplified Onboarding — 3 Steps</h3>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>➡️ Step 1 — Submit Documents</h3>
+          <p class="mini">Send: Driver’s License, Completed W‑9, Truck Photos (front/back/sides/interior), and Truck Registration.</p>
+          <p class="mini">📧 <a href="mailto:coreversallc@gmail.com">coreversallc@gmail.com</a> • 📲 <a href="tel:+14122655719">(412) 265‑5719</a></p>
+        </article>
+        <article class="card">
+          <h3>➡️ Step 2 — Pay Membership</h3>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn" href="https://connect.intuit.com/t/scs-v1-f79ed5961e8d4d3db6ed43d4754feceb612a3a3bc3ea45d0890b2400636b4990c035ba9abbfb45268e21eb08486c4156?locale=EN_US" target="_blank" rel="noopener">$50 Basic</a>
+            <a class="btn" href="https://connect.intuit.com/t/scs-v1-bfc32b21c2544f8b9c88b24f9409628a66cb3b974fdb4993a221da11c1ffb15b8a3ec768000d41a3a5c670203277bf8b?locale=EN_US" target="_blank" rel="noopener">$99.99 Premium</a>
+          </div>
+          <p class="mini" style="margin-top:8px">📤 After payment, email a screenshot confirmation to <a href="mailto:coreversallc@gmail.com">coreversallc@gmail.com</a>.</p>
+        </article>
+        <article class="card">
+          <h3>➡️ Step 3 — Join the Load Board</h3>
+          <p class="mini">Post daily: location, truck size, availability, and one truck photo.</p>
+          <a class="btn" href="https://chat.whatsapp.com/CJu4feCKixlKpCRVjW0J7c" target="_blank" rel="noopener">Join WhatsApp Load Board</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT -->
+  <section class="section" id="equipment">
+    <div class="wrap">
+      <h3 style="margin:0 0 16px; font-size:26px">🚚 Accepted Equipment</h3>
+      <div class="grid cols-3">
+        <div class="card"><strong>26ft Box Trucks</strong><div class="mini">Liftgate required</div></div>
+        <div class="card"><strong>24ft Box Trucks</strong><div class="mini">Liftgate required</div></div>
+        <div class="card"><strong>16ft Box Trucks</strong><div class="mini">Liftgate required</div></div>
+        <div class="card"><strong>High‑Roof Sprinter Vans</strong><div class="mini">Expedite‑ready</div></div>
+        <div class="card"><strong>Semi Trucks</strong><div class="mini">OTR expedite loads available</div></div>
+      </div>
+      <p class="mini" style="margin-top:10px"><strong>✅ Box truck owners automatically qualify — no commercial insurance required.</strong> All freight runs under Core Versa LLC’s authority and insurance.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="wrap faq">
+      <h3 style="margin:0 0 16px; font-size:26px">❓ FAQ</h3>
+      <details>
+        <summary>Do I need to rent a box truck to join?</summary>
+        <div>No. Renting via our network is optional. You can onboard with your own equipment (Sprinter, 26' box w/ liftgate, or semi).</div>
+      </details>
+      <details>
+        <summary>What’s the difference between Basic and Premium?</summary>
+        <div>Basic ($50) = 6 months of load board access and dispatcher support. Premium ($99.99) = lifetime access, 24/7 support, plus insurance coverage and authority access (subject to approval).</div>
+      </details>
+      <details>
+        <summary>When do I get a dispatcher?</summary>
+        <div>Right after payment confirmation, we assign a dispatcher who starts booking loads with you.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap" style="display:flex; gap:18px; justify-content:space-between; flex-wrap:wrap">
+      <div>
+        <strong>Core Versa LLC</strong><br>
+        Dispatching & Driver Onboarding<br>
+        <a href="mailto:coreversallc@gmail.com">coreversallc@gmail.com</a> • <a href="tel:+14122655719">(412) 265‑5719</a>
+      </div>
+      <div>
+        <a class="pill" href="#apply">Apply</a>
+        <a class="pill" href="#options">Memberships</a>
+        <a class="pill" href="https://chat.whatsapp.com/CJu4feCKixlKpCRVjW0J7c" target="_blank" rel="noopener">WhatsApp Board</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
